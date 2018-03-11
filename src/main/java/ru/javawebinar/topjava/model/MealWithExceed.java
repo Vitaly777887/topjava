@@ -25,10 +25,6 @@ public class MealWithExceed {
         return id;
     }
 
-    public LocalDateTime getDateTime() {
-        return dateTime;
-    }
-
     public String getDescription() {
         return description;
     }
@@ -40,6 +36,11 @@ public class MealWithExceed {
     public boolean isExceed() {
         return exceed;
     }
+
+    public LocalDateTime getDateTime() {
+        return dateTime;
+    }
+
 
     @Override
     public String toString() {
