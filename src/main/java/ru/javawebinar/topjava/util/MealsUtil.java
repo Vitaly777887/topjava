@@ -15,8 +15,6 @@ import static java.util.stream.Collectors.toList;
 
 public class MealsUtil {
 
-    public static final int DEFAULT_CALORIES_PER_DAY = 2000;
-
     private MealsUtil() {
     }
 
@@ -41,7 +39,7 @@ public class MealsUtil {
                 .collect(toList());
     }
 
-    private static MealWithExceed createWithExceed(Meal meal, boolean exceeded) {
+    public static MealWithExceed createWithExceed(Meal meal, boolean exceeded) {
         return new MealWithExceed(meal.getId(), meal.getDateTime(), meal.getDescription(), meal.getCalories(), exceeded);
     }
 }
